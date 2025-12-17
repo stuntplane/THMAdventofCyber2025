@@ -1,14 +1,8 @@
-Dzięki za czujność! Rzeczywiście, w udostępnionych plikach ta część się nie znalazła, a jest kluczowa dla zakończenia zadania (zwykle te trzy klucze służą właśnie do odblokowania "głównego bossa").
-
-Dodałem **Krok 6**, który opisuje ten finałowy etap z bazą danych MySQL. Uzupełniłem też tabelę z flagami.
-
-Oto kompletna, zaktualizowana wersja `README.md`:
-
 ```markdown
-# 🎄 Dzień 7 - AWS CloudWatch & Log Analysis
+# 🎄 Dzień 7 - Network Discovery - Scan-ta Clause
 
 ## 📝 Opis zadania
-Siódmy dzień wyzwania polegał na analizie niestandardowych usług w celu zdobycia trzech kluczy, które odblokowywały dostęp do panelu administracyjnego (Web Console). Ostatnim etapem była eksploracja bazy danych MySQL dostępnej przez ten panel, aby zdobyć główną flagę.
+Siódmy dzień wyzwania polegał na analizie sieci i ujawnieniu usług, w celu zdobycia trzech kluczy, które odblokowywały dostęp do panelu administracyjnego (Web Console). Ostatnim etapem była eksploracja bazy danych MySQL dostępnej przez ten panel, aby zdobyć główną flagę.
 
 ## 🔍 Kroki do celu
 
@@ -49,12 +43,21 @@ Po wpisaniu złożonego hasła na stronie, uzyskano dostęp do webowej konsoli. 
 
 *Rysunek 1: Rekonesans i strona logowania.*
 
+![1.1](img/1.1.png)
+![1.2](img/1.2.png)
+
 *Rysunek 2: Zdobywanie kluczy przez FTP i Netcat.*
+
+![2.1](img/2.1.png)
+![2.2](img/3.1.png)
 
 *Rysunek 3: Wydobycie klucza z rekordu DNS.*
 
+![3.2](img/3.2.png)
+
 *Rysunek 4: Dostęp do konsoli i ekstrakcja flagi z bazy danych.*
 
+![4.1](img/4.1.png)
 
 ## 🛠️ Użyte narzędzia
 
