@@ -53,7 +53,7 @@ Po wpisaniu złożonego hasła na stronie, uzyskano dostęp do webowej konsoli. 
 
 *Rysunek 3: Wydobycie klucza z rekordu DNS.*
 
-![3.2](img/3.2.png)
+![3.1](img/3.1.png)
 
 *Rysunek 4: Dostęp do konsoli i ekstrakcja flagi z bazy danych.*
 
