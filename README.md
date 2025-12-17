@@ -9,7 +9,7 @@ Moje postępy w corocznym wyzwaniu TryHackMe!
 - [ ] ([Dzień 04](./Day_04))
 - [ ] ([Dzień 05](./Day_05))
 - [ ] ([Dzień 06](./Day_06))
-- [ ] ([Dzień 07](./Day_07))
+- [x] ([Dzień 07](./Day_07))
 - [ ] ([Dzień 08](./Day_08))
 - [ ] ([Dzień 09](./Day_09))
 - [ ] ([Dzień 10](./Day_10))
