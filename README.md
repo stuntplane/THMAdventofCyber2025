@@ -4,13 +4,13 @@ Moje postępy w corocznym wyzwaniu TryHackMe!
 
 ## 📅 Status zadań
 - [ ] ([Dzień 01](./Day_01))
-- [x] ([Dzień 02](./Day_02))
+- [ ] ([Dzień 02](./Day_02))
 - [ ] ([Dzień 03](./Day_03))
 - [ ] ([Dzień 04](./Day_04))
 - [ ] ([Dzień 05](./Day_05))
 - [ ] ([Dzień 06](./Day_06))
 - [x] ([Dzień 07](./Day_07))
-- [ ] ([Dzień 08](./Day_08))
+- [x] ([Dzień 08](./Day_08))
 - [ ] ([Dzień 09](./Day_09))
 - [ ] ([Dzień 10](./Day_10))
 - [ ] ([Dzień 11](./Day_11))
