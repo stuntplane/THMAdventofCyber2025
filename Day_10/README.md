@@ -14,6 +14,7 @@ Kluczowym punktem analizy okazał się alert dotyczący eskalacji uprawnień: Li
 
 ## 📸 Dokumentacja wizualna
 ![kernel](./img/1.png)
+
 *Kernel zainstalowany na websrv-01*
 ![ops](./img/2.png)
 *Podejrzana komenda na websrv-01 polecona przez ops*
