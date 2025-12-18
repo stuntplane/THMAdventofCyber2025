@@ -8,11 +8,11 @@
 2. **Analiza**: Do przekonwertowania plików na format zrozumiały dla programu John the Ripper użyto dedykowanych narzędzi:
 
 
-# Ekstrakcja hasha z PDF
+* Ekstrakcja hasha z PDF
 ```bash
 pdf2john flag.pdf > hash_pdf.txt
 ```
-# Ekstrakcja hasha z ZIP
+* Ekstrakcja hasha z ZIP
 ```bash
 zip2john flag.zip > hash_zip.txt
 ```
@@ -22,12 +22,12 @@ zip2john flag.zip > hash_zip.txt
 Wykorzystano narzędzie John the Ripper wraz z listą haseł rockyou.txt. Atak zakończył się sukcesem niemal natychmiastowo ze względu na niską złożoność haseł.
 
 
-# Łamanie hasła PDF
+* Łamanie hasła PDF
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hash_pdf.txt
 ```
 
-# Łamanie hasła ZIP
+* Łamanie hasła ZIP
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hash_zip.txt
 ```
