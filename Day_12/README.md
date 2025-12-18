@@ -21,6 +21,7 @@ Wykryto próby wykorzystania zaufanych aplikacji (Legitimate Applications) do ma
 
 ## 📸 Dokumentacja wizualna
 ![Rysunek1](./img/1.png)
+
 *Interfejs Email Threat Inspector z listą wiadomości oczekujących na analizę.*
 ![Rysunek2](./img/7.png)
 *Przykład wiadomości typu Phishing z widocznymi błędami w domenie nadawcy (Typosquatting).*
