@@ -19,7 +19,7 @@ Kluczowym punktem analizy okazał się alert dotyczący eskalacji uprawnień: Li
 ![ops](./img/2.png)
 *Podejrzana komenda na websrv-01 polecona przez ops*
 ![ssh login](./img/3.png)
-*Udane polaczenie ssh z storage-01 *
+*Udane polaczenie ssh z storage-01*
 ![successful root login](./img/4.png)
 *Udane logowane z uprawnieniami roota*
 ![user added to sudoers group](./img/5.png)
