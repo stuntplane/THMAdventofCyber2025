@@ -17,7 +17,6 @@ Siódmy dzień wyzwania polegał na analizie sieci i ujawnieniu usług, w celu z
    ```bash
    ftp 10.64.155.11 21212
    get tbfc_qa_key1
-```
 
 
 4. **Klucz 2 (TBFC App - Port 25251)**:
@@ -27,8 +26,6 @@ Użyto `netcat` do połączenia z niestandardową aplikacją nasłuchującą na 
 nc -v 10.64.155.11 25251
 
 ```
-
-
 5. **Klucz 3 (DNS/UDP - Port 53)**:
 Skanowanie UDP (`nmap -sU`) wykazało otwarty port 53. Za pomocą narzędzia `dig` odpytano serwer o rekord TXT, uzyskując trzeci klucz.
 ```bash
