@@ -1,4 +1,4 @@
-```markdown
+
 # 🎄 Dzień 7 - Network Discovery - Scan-ta Clause
 
 ## 📝 Opis zadania
@@ -17,11 +17,12 @@ Siódmy dzień wyzwania polegał na analizie sieci i ujawnieniu usług, w celu z
    ```bash
    ftp 10.64.155.11 21212
    get tbfc_qa_key1
-
 ```
+
 
 4. **Klucz 2 (TBFC App - Port 25251)**:
 Użyto `netcat` do połączenia z niestandardową aplikacją nasłuchującą na tym porcie, co zwróciło drugi klucz.
+
 ```bash
 nc -v 10.64.155.11 25251
 
