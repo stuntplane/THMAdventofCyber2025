@@ -34,15 +34,15 @@ Proces rozpoczęto od zapoznania się ze składnią reguł YARA oraz modyfikator
 2. Implementacja reguły TBFC_Trace
 
 Utworzono plik reguły TBFC.yar, mający na celu wykrycie charakterystycznego ciągu znaków "TBFC:". W toku prac reguła została zoptymalizowana pod kątem efektywności, aby przeszukiwać pliki w sposób rekurencyjny.
-
+```
 Fragment kodu
-
 rule TBFC_Trace {
     strings:
         $TBFC_string = "TBFC:" nocase
     condition:
         $TBFC_string
 }
+```
 3. Skanowanie i analiza znalezisk
 
 Uruchomiono skanowanie katalogu ~/Downloads/easter. Narzędzie wskazało liczne trafienia w plikach graficznych (.jpg) oraz w pliku o nazwie embeds. Szczegółowa analiza pliku embeds z flagą -s ujawniła dokładne offsety, pod którymi znajdowały się poszukiwane informacje, co doprowadziło do pomyślnego zakończenia zadania.
