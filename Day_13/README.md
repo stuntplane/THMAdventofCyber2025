@@ -27,6 +27,7 @@ yara -s ./TBFC.yar -r /home/ubuntu/Downloads/easter
 
 ## 📸 Dokumentacja wizualna
 ![Rysunek1](./img/1.png)
+
 *Struktura pliku yar oraz wynik działania YARA w terminalu, pokazujący listę zainfekowanych plików.
 ![Rysunek2](./img/2.png)
 *Szczegółowa analiza pliku embeds ukazująca ukryta wiadomosc*
