@@ -36,6 +36,7 @@ Finałowym krokiem była analiza artykułu w gazecie "Wareville Times" dostepnej
 ![Rysunek1](./img/1.png)
 *Wykrycie gniazda /var/run/docker.sock wewnątrz kontenera uptime-checker.*
 ![Rysunek2](./img/2.png)
+
 *Sukcesywne przejście do uprzywilejowanego kontenera deployer i uruchomienie skryptu*
 ![Rysunek3](./img/3.png)
 *Odnalezienie flagi w gazecie.*
