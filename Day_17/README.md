@@ -1,19 +1,34 @@
-# 🎄 Dzień 17 - [Tytuł Zadania]
+# 🎄 Dzień 17 - CyberChef - Hoperation Save McSkidy
 
 ## 📝 Opis zadania
-*Krótki opis tego, czego dotyczyło dzisiejsze wyzwanie (np. analiza logów, web exploitation).*
+*Siedemnasty dzień wyzwania koncentrował się na technikach kodowania i dekodowania danych. Celem było złamanie pięciu zamków zabezpieczających więzienie "Quantum Warren", w którym uwięziono McSkidy. Zadanie wymagało identyfikacji metod transformacji danych (takich jak Base64, ROT13, Hex czy XOR) oraz budowania zaawansowanych receptur w narzędziu CyberChef w celu odzyskania ukrytych haseł.*
 
 ## 🔍 Kroki do celu
-1. **Rekonesans**: [Opisz co zrobiłeś na początku]
-2. **Analiza**: [Opisz jak analizowałeś dane/kod]
-3. **Eksploitacja/Rozwiązanie**: [Opisz ostateczny krok]
+1. **Analiza różnic między kodowaniem a szyfrowaniem**: 
+Pierwszym krokiem było zrozumienie fundamentów: kodowanie służy do zapewnienia kompatybilności danych, podczas gdy szyfrowanie zapewnia ich poufność. Pozwoliło to na szybką identyfikację standardowych formatów przesyłania informacji w nagłówkach HTTP i komunikatach strażników.
+2. **Rekonesans i przechwytywanie danych**: 
+Informacje potrzebne do otwarcia zamków pozyskano z nagłówkow HTTP i Czatu: analiza ruchu sieciowego pozwoliła na wyodrębnienie zakodowanych ciągów znaków oraz "Recipe ID", wskazujących na kolejność operacji dekodujących.
+3. **Łamanie zamków przy użyciu CyberChef**: 
+Kluczowym etapem było stworzenie precyzyjnych receptur dla każdego z pięciu zamków. Wykorzystano m.in. następujące techniki:
 
-> [!TIP]
-> Tutaj możesz dodać własne przemyślenia lub ciekawostki.
+* Zamki 1 i 2: Base64 oraz podwojne Base64
+
+* Zamek 3: Base64 oraz XOR z uzyciem wyodrebionego klucza
+
+* Zamek 4: Base64 oraz md5
+
+* Zamek 5: ROT13, Base64 oraz ROT47 na koncu.
+
 
 ## 📸 Dokumentacja wizualna
-![Krok 1 - Opis](./img/step1.png)
-*Rysunek 1: Opis tego, co widać na zrzucie ekranu.*
+![Rysunek1](./img/1.png)
+*Tabela porównawcza Encoding vs Encryption jako podstawa teoretyczna zadania.*
+![Rysunek2](./img/2.png)
+*Proces budowania receptury w CyberChef (np. From Base64 -> Reverse -> ROT13).*
+![Rysunek3](./img/3.png)
+*Moment złamania piątego zamka i uzyskanie końcowej flagi.*
+![Rysunek4](./img/4.png)
+*Tabela porownawcza RecipeID*
 
 ## 🚩 Znalezione flagi
 | Nazwa flagi | Wartość |
