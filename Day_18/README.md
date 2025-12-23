@@ -14,7 +14,7 @@ Druga część zadania wymagała przygotowania ładunku (payloadu) w taki sposó
 
 Wynik należało umieścić w zmiennej $ObfAPieEy. Ponowne uruchomienie skryptu skutkowało odsłonięciem drugiej flagi.
 
-> [!TIP: Obfuskacja vs Szyfrowanie]
+>* TIP: Obfuskacja vs Szyfrowanie
 > Warto pamiętać, że obfuskacja ma na celu jedynie utrudnienie czytelności kodu dla człowieka i prostych skanerów, podczas gdy szyfrowanie (Encryption) służy do pełnej ochrony poufności danych przy użyciu kluczy kryptograficznych.
 
 ## 📸 Dokumentacja wizualna
