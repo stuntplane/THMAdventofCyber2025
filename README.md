@@ -22,7 +22,7 @@ Moje postępy w corocznym wyzwaniu TryHackMe!
 - [x] ([Dzień 17](./Day_17))
 - [x] ([Dzień 18](./Day_18))
 - [x] ([Dzień 19](./Day_19))
-- [ ] ([Dzień 20](./Day_20))
+- [x] ([Dzień 20](./Day_20))
 - [ ] ([Dzień 21](./Day_21))
 - [ ] ([Dzień 22](./Day_22))
 - [ ] ([Dzień 23](./Day_23))
