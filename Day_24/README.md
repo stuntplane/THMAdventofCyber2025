@@ -1,7 +1,7 @@
 # 🎄 Dzień 24 - Exploitation with cURL - Hoperation Eggsploit
 
 ## 📝 Opis zadania
-*Dwudziesty czwarty, finałowy dzień wyzwania to sprawdzian umiejętności manualnej interakcji z aplikacjami webowymi. W scenariuszu, w którym nie mamy dostępu do przeglądarki ani narzędzi z graficznym interfejsem (jak Burp Suite), kluczowa staje się biegłość w obsłudze narzędzia wiersza poleceń cURL. Zadanie polegało na manipulacji żądaniami HTTP (metody GET/POST, ciasteczka, nagłówki User-Agent) oraz przeprowadzeniu ataku brute-force w celu wyłączenia panelu sterowania złośliwych królików i zamknięcia tunelu czasoprzestrzennego.
+Dwudziesty czwarty, finałowy dzień wyzwania to sprawdzian umiejętności manualnej interakcji z aplikacjami webowymi. W scenariuszu, w którym nie mamy dostępu do przeglądarki ani narzędzi z graficznym interfejsem (jak Burp Suite), kluczowa staje się biegłość w obsłudze narzędzia wiersza poleceń cURL. Zadanie polegało na manipulacji żądaniami HTTP (metody GET/POST, ciasteczka, nagłówki User-Agent) oraz przeprowadzeniu ataku brute-force w celu wyłączenia panelu sterowania złośliwych królików i zamknięcia tunelu czasoprzestrzennego.
 
 ## 🔍 Kroki do celu
 1. **Manipulacja żądaniami POST**: 
@@ -55,10 +55,13 @@ Wniosek: Ścieżka ataku została zmapowana: `User-Agent -> PIN -> Login (Sesja)
 
 ## 📸 Dokumentacja wizualna
 ![Rysunek1](./img/1.png)
+
 *Wynik żądania POST z widoczną flagą w odpowiedzi serwera.*
 ![Rysunek2](./img/2.png)
+
 *Zawartość pliku cookies.txt potwierdzająca przechwycenie sesji.*
 ![Rysunek3](./img/3.png)
+
 *Terminal wyświetlający flagę po prawidłowej manipulacji "User-Agent"*
 
 ## 🛠️ Użyte narzędzia
