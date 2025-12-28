@@ -28,11 +28,8 @@ Bash
 # Spoofing nagłówka User-Agent
 curl -A "TBFC" http://[MACHINE_IP]/agent.php
 ```
-4. **Bonus: Atak Brute-Force (Password & PIN)**:
-Ostatnia faza wymagała złamania zabezpieczeń metodą siłową.
-Hasło Admina: Wykorzystano skryptowanie w Bashu do iteracji po liście haseł w celu znalezienia poprawnego hasła do endpointu /bruteforce.php.
 
-5. **Bonus Mission: Próba zamknięcia tunelu czasoprzestrzennego**:
+4. **Bonus Mission: Próba zamknięcia tunelu czasoprzestrzennego**:
 Ostatnim, dodatkowym wyzwaniem było zamknięcie tunelu ("wormhole") poprzez panel sterowania królików. Zadanie wymagało złożonej interakcji z API, łączącej spoofing, łamanie PIN-u oraz uwierzytelnianie.
 
 Rekonesans i User-Agent Analiza wykazała, że serwer pod adresem `terminal.php?action=panel` odrzuca standardowe połączenia. Metodą prób i błędów ustalono, że wymagany jest nagłówek `User-Agent: secretcomputer`. Użycie go ujawniło dostępne endpointy:
