@@ -14,28 +14,32 @@ Siódmy dzień wyzwania polegał na analizie sieci i ujawnieniu usług, w celu z
 
 3. **Klucz 1 (FTP - Port 21212)**:
    Połączono się przez FTP (login: `anonymous`), skąd pobrano plik z pierwszą częścią hasła.
-   ```bash
-   ftp 10.64.155.11 21212
-   get tbfc_qa_key1
-
+```
+bash
+ftp 10.64.155.11 21212
+get tbfc_qa_key1
+```
 
 4. **Klucz 2 (TBFC App - Port 25251)**:
 Użyto `netcat` do połączenia z niestandardową aplikacją nasłuchującą na tym porcie, co zwróciło drugi klucz.
 
-```bash
+```
+bash
 nc -v 10.64.155.11 25251
 
 ```
 5. **Klucz 3 (DNS/UDP - Port 53)**:
 Skanowanie UDP (`nmap -sU`) wykazało otwarty port 53. Za pomocą narzędzia `dig` odpytano serwer o rekord TXT, uzyskując trzeci klucz.
-```bash
+```
+bash
 dig @10.64.155.11 TXT key3.tbfc.local +short
 
 ```
-
-
 6. **Finał: Web Console i MySQL**:
 Po wpisaniu złożonego hasła na stronie, uzyskano dostęp do webowej konsoli. Umożliwiła ona interakcję z systemem. Wykorzystano ją do przeszukania bazy danych MySQL (enumeracja tabel i kolumn), gdzie w jednej z tabel znaleziono ostateczną flagę.
+
+> 💡 Wnioski i Ciekawostki
+> W przypadku trzeciego klucza (DNS), samo skanowanie portów nie wystarczyło. Informacja o domenie key3.tbfc.local nie była rozgłaszana i wymagała wnikliwej analizy treści zadania (OSINT/Context Analysis). Pokazuje to, że w pentestach techniczne skanowanie musi iść w parze ze zrozumieniem logiki biznesowej celu.
 
 ## 📸 Dokumentacja wizualna
 
